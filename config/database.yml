@@ -84,6 +84,7 @@ production:
     <<: *default
     database: tho_production
     username: tho
+    url: <%= ENV['DATABASE_URL'] %>
     password: <%= ENV["THO_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
